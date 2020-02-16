@@ -1,0 +1,14 @@
+body{
+    background-image: url(https://bit.ly/2vDtkFT);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-field{
+   
+    width: 320px;
+    border: 5px solid gray;
+  
+}
+.jumbotron{
+    background-color: yellowgreen;
+}
