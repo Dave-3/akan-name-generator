@@ -12,7 +12,7 @@ Akan names are derived from Ghanian culture. Frequently in Ghana, children are g
 ## Technologies Used
 {A simple Html,Css,Javascript webpage.}
 ## Link to Github pages
-
+https://dave-3.github.io/akan-name-generator/
 ### License
 *{MIT License.}*
 Copyright (c) {2020} **{David Njenga Mburu}**
