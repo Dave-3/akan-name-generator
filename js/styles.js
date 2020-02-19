@@ -18,31 +18,16 @@ var dayOfTheWeek = [
   "Saturday"
 ];
 function giveAkanName() {
-  var year = parseInt(document.getElementById("year").value);
-  var month = parseInt(document.getElementById("month").value);
-  var day = parseInt(document.getElementById("day").value);
+  var birthday = document.getElementById("birthday").value;
   var gender = getGender();
-  var date = new Date(year + "/" + month + "/" + day);
+  var date = new Date(birthday);
   var dayBorn = date.getDay();
+  
   var akanName;
-  var validate = year > 0 && month > 0 && month <= 12 && day > 0 && day <= 31;
-  var validateGender = gender !== "male" && gender !== "female";
-  if (year <= 0 || year > 2020) {
-    alert("Invalid year");
-  } else if (month <= 0 || month > 12) {
-    alert("Month is between 1 and 12");
-  } else if (day <= 0 || day > 31) {
-    alert("Date is between 1 and 31");
-  } else if (validate == false) {
-    alert("Oops Invalid Input!!");
-  }
+  
   if (
-    gender === "male" &&
-    year > 0 &&
-    month > 0 &&
-    month < 13 &&
-    day > 0 &&
-    day < 32
+    gender === "male" 
+    
   ) {
     akanName = maleNames[dayBorn];
     alert(
@@ -52,12 +37,8 @@ function giveAkanName() {
         akanName
     );
   } else if (
-    gender === "female" &&
-    year > 0 &&
-    month > 0 &&
-    month < 13 &&
-    day > 0 &&
-    day < 32
+    gender === "female" 
+    
   ) {
     akanName = femaleNames[dayBorn];
     alert(
