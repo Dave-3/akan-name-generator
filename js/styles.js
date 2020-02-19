@@ -9,10 +9,7 @@ function giveAkanName() {
   
   var akanName;
   
-  if (
-    gender === "male" 
-    
-  ) {
+  if ( gender === "male" ) {
     akanName = maleNames[dayBorn];
     alert(
       "You were born on " +
@@ -20,10 +17,7 @@ function giveAkanName() {
         " and your Akan name is " +
         akanName
     );
-  } else if (
-    gender === "female" 
-    
-  ) {
+  } else if (gender === "female") {
     akanName = femaleNames[dayBorn];
     alert(
       "You were born on " +
